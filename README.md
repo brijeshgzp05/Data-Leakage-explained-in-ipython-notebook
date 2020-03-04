@@ -8,10 +8,14 @@ This is often called data leakage.
 ### There are many situations where data leakage can be found. Some of them are explained here: 
 #### 1. While transformation or preprocessing of data - 
         Example - While applying dimensionality reduction or transformation such as scaling the dataset, we accidentally, do it on the 
-        whole data and then split it into training and testing data. For example while applying standard scaling we use the mean and std of
+        whole data and then split it into training and testing data. For example while applying standard scaling we use the mean of
         whole data and scale it. Then split it into train and test. What happens is both train and test data become almost same. There is 
         no puspose of testing. So the right method is first split the data and then transform both train and test data separately. It is 
-        explained in the [Notebook](https://github.com/brijeshgzp05/brijeshgzp05-Data-Leakage-explained-in-ipython-notebook/blob/master/Data%20Leakage.ipynb)
+        explained in the notebook.
+        
+        
+#### 2. Time series data -
+        Suppose the data is in order A -> B -> C. We may accidentally train it on A and C. Here also a data leakage problem can occur.
         
         
         
