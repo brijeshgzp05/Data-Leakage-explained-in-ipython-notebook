@@ -2,7 +2,7 @@ Data leakage, a very interesting topic. If anyone has not heard of it before and
 answer we will get will be quite interesting. Some will say that a portion of data will be masked or removed accidentally while training.
 Is it not? But here is the answer.
 Sometimes when we train a model and test it, the accuracy we get is very high and no overfitting occurs. We think that the model is ready 
-to be deployed and we deploy it. Boom, it fails in production. You do not get same level of performance in production as you got in testng.
+to be deployed and we deploy it. Boom, it fails in production. You do not get same level of performance in production as you got in testing.
 This is often called data leakage.
 
 ### There are many situations where data leakage can be found. Some of them are explained here: 
@@ -18,7 +18,7 @@ This is often called data leakage.
         Suppose the data is in order A -> B -> C. We may accidentally train it on A and C. Here also a data leakage problem can occur.
         
         
-        
+#### 3. When many data points are duplicate.
         
         
         
